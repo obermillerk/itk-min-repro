@@ -13,3 +13,5 @@ npm run start # launch app
 ```
 
 Once running, use the `Select Directory` button to choose a directory in the pop up window, which will trigger an attempt to read the image files via itk.
+
+*NOTE* - If you edit the index.ts file (ie disabling the `nodeIntegrationInWorker` flag to see it working) you have to restart the electron instance, either by typing `rs` and hitting enter in the console you launched it while it's running, or quiting entirely and restarting with `yarn start`.
