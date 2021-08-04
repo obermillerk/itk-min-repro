@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+  </head>
+  <body>
+    <h1>ITK readImageDICOMFileSeries Minimal Repro</h1>
+    <p>
+      This will produce the error reported. Select a directory of DICOM files with the button below
+      to trigger the image loading, and see the dev console for error or output.
+    </p>
+    <p>
+      Disabling `nodeIntegrationInWorker` in index.ts (line 16)
+      will allow it to resolve properly, but I use this in my main project, so a solution would ideally
+      keep this enabled.
+    </p>
+
+    <div style="margin-bottom: 1em;">
+      <button id="openDirectoryButton">Select Directory</button>
+      <span id="directoryLabel">Select directory to load images</span>
+    </div>
+
+<!--    <div style="position: relative; width: 75%; margin: 0 auto">-->
+<!--      <div style="padding-top: 100%;"></div>-->
+<!--      <div id="container" style="position: absolute; inset: 0; background: red;"></div>-->
+<!--    </div>-->
+  </body>
+</html>
